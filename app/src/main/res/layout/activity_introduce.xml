@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:id="@+id/tvIntroduce"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="개발자 소개"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivMyPhoto"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvIntroduce"
+        app:srcCompat="@mipmap/geomdung" />
+
+    <TextView
+        android:id="@+id/myName"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text=" 이세민"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName" />
+
+    <TextView
+        android:id="@+id/tvClass"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_vertical"
+        android:text=" 분반"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myName" />
+
+    <TextView
+        android:id="@+id/myClass"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text=" 01분반"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvClass" />
+
+    <TextView
+        android:id="@+id/tvID"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_vertical"
+        android:text=" 학번"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvClass"
+        app:layout_constraintTop_toBottomOf="@+id/myName" />
+
+    <TextView
+        android:id="@+id/myID"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text=" 20220789"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/myClass"
+        app:layout_constraintTop_toBottomOf="@+id/tvID" />
+
+    <TextView
+        android:id="@+id/tvEmail"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_vertical"
+        android:text=" 이메일"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myClass" />
+
+    <TextView
+        android:id="@+id/myEmail"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text=" lsmsm0327@naver.com"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvEmail" />
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text=" 이름"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivMyPhoto" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="#000000"
+        android:onClick="onClick"
+        android:text="뒤로가기"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/tvFav"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="28dp"
+        android:gravity="center_vertical"
+        android:text="좋아하는 것"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myEmail" />
+
+    <TextView
+        android:id="@+id/myFav"
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:text="김치나베, 냉모밀, 떡볶이, 순대국밥"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvFav" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

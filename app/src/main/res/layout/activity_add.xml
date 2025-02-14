@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/tvAddMovie"
+        android:layout_width="150dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:gravity="center_vertical"
+        android:text="새로운 영화 추가"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivAddPoster"
+        android:layout_width="120dp"
+        android:layout_height="160dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddMovie"
+        app:srcCompat="@mipmap/movie00" />
+
+    <TextView
+        android:id="@+id/tvAddTitle"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text=" 제목"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ivAddPoster" />
+
+    <EditText
+        android:id="@+id/etTitle"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="제목 입력"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddTitle" />
+
+    <TextView
+        android:id="@+id/tvAddYear"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text=" 개봉연도"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etTitle" />
+
+    <EditText
+        android:id="@+id/etYear"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="개봉연도 입력"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddYear" />
+
+    <ImageView
+        android:id="@+id/ivCal"
+        android:layout_width="30dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/etYear"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddYear"
+        app:srcCompat="@mipmap/cal" />
+
+    <TextView
+        android:id="@+id/tvAddDirector"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text=" 감독"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvAddYear"
+        app:layout_constraintTop_toBottomOf="@+id/etTitle" />
+
+    <EditText
+        android:id="@+id/etDirector"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="감독 입력"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/etYear"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddDirector" />
+
+    <TextView
+        android:id="@+id/tvAddActors"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text=" 주연배우"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etYear" />
+
+    <EditText
+        android:id="@+id/etActors"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="주연배우 입력"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddActors" />
+
+    <TextView
+        android:id="@+id/tvAddGenre"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text=" 장르"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etActors" />
+
+    <EditText
+        android:id="@+id/etGenre"
+        android:layout_width="130dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="장르 입력"
+        android:inputType="textPersonName"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddGenre" />
+
+    <TextView
+        android:id="@+id/tvAddLine"
+        android:layout_width="100dp"
+        android:layout_height="28dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_vertical"
+        android:text=" 명대사"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/tvAddGenre"
+        app:layout_constraintTop_toBottomOf="@+id/etActors" />
+
+    <EditText
+        android:id="@+id/etLine"
+        android:layout_width="210dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="명대사 입력"
+        android:inputType="text"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/etGenre"
+        app:layout_constraintTop_toBottomOf="@+id/tvAddLine" />
+
+    <Button
+        android:id="@+id/btnAdd"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#000000"
+        android:onClick="onClick"
+        android:text="추가"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#000000"
+        android:onClick="onClick"
+        android:text="취소"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toEndOf="@+id/btnAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
